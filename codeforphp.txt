@@ -1,0 +1,24 @@
+
+#This is for the phpMyAdmin
+
+CREATE TABLE commnets (
+    cid int(11) not null AUTO_INCREMENT PRIMARY KEY,
+    uid varchar (128) not null,
+    date datetime not null,
+    message Text(128) not null
+    );
+
+
+
+#This is for the HTML section   
+<?php
+echo "<form>
+        <input type='hidden' name='uid' value='Anonymous'>
+        <input type='hidden' name='date' value=' ".date('Y-m-d H:i:s')."'>
+        <textarea name='message'></textarea>
+        <button type='submit' name='submit'>Comment</button>
+
+</form>";
+?>
+    
+    

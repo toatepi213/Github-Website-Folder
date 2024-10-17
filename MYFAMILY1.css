@@ -1,8 +1,11 @@
+/* Adjusting the body */
 body {
     background-color: #e7e7e7;
     margin: auto;
+    margin-top: 2%;
 }
 
+/* Container styling */
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -70,67 +73,81 @@ body {
         width: 100%;
         margin: 10px 0;
     }
-
    
 }
 
-.hello {
-    position: absolute;
-    height: auto;
-    left: 0px;
-    width: 10%;
-    padding-left: 10%;
+/* Logo Styling */
+.logo {
+    position: relative; /* Adjusted to avoid absolute positioning */
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
+
+.logo img {
+    max-width: 80px; /* Adjust the logo size to prevent overlap */
+    height: auto;
+}
+
+/* Navigation Bar Styling */
 .navigationbar {
     grid-area: navigationbar;
     background-color: #6D8764;
     color: #e7e7e7;
-    padding: 10%;
-    height: 10%;
+    padding: 1rem;
 }
 
 .navigationbar ul {
     list-style-type: none;
     text-align: center;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigationbar li {
     display: inline-block;
-    border: 2px solid #e7e7e7;
-    padding: 2% 1%;
+    padding: 0.5rem 1rem;
     color: #e7e7e7;
-    text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
+    border: 2px solid #e7e7e7;
 }
 
+/* Heading Background Image */
 .heading1 {
     grid-area: heading1;
-    background-color: #e7e7e7;
     background-image: url(images/kakatisi.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    font-size: 150%;
-    font-family: Emotional Rescue Personal Use;
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: 400px; /* Adjust height for the heading area */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10%;
+    color: #171616;
+    font-size: 2rem;
+    font-family: 'Emotional Rescue Personal Use', sans-serif;
 }
 
+/* Text section */
 .text1 {
     grid-area: text1;
     background-color: #6D8764;
-    font-size: 100%;
+    font-size: 1rem;
     text-align: justify;
-    padding: 15px;
+    padding: 1rem;
 }
 
-H2 {
+.text1 h2 {
     text-align: center;
 }
+/* Image Resizing */
 .image-resize {
     width: 95%;
     height: auto;
     object-position: center center;
 }
 
+/* Picture Styling */
 .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8 {
     background-color: #6D8764;
     border: 2px solid #050000;
@@ -139,30 +156,33 @@ H2 {
     padding-top: 10%;
 }
 
+/* Picture name styling */
 .picturename {
     margin-top: auto; 
     padding: 10%;
     background-color: #6D8764;
     text-align: justify;
-    font-size: 90%;
+    font-size: 0.9rem;
     border-radius: 15%;
 }
 
 .picturename .btn {
     display: inline-block;
-    padding: 2% 3%;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 4px;
-    color: #000000;
-    border: 2px solid #000000;
+    color: #000;
+    border: 2px solid #000;
 }
 
+/* Text2 section */
 .text2 {
     grid-area: text2;
     background-color: #6d8764;
-    padding: 8%;
+    padding: 2rem;
 }
 
+/* Footer */
 .footer {
     grid-area: footer;
     background-color: #a2a2a2;
